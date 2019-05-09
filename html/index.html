@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Dynamic HTML thing</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+  </head>
+  <body>
+    <form id="userInput">
+      <div class="userButtons">
+        <input
+          class="inputField"
+          max="100"
+          type="number"
+          id="numBoxes"
+          required
+          placeholder="Number of pics wanted: "
+        />
+        <input
+          class="inputField"
+          type="text"
+          id="content"
+          placeholder="Keywords (leave blank for random): "
+        />
+        <input
+          class="userButtons"
+          type="button"
+          id="subButton"
+          value="Submit"
+          onclick="submitButtonpress()"
+        />
+        <input
+          class="userButtons"
+          type="submit"
+          id="clearButton"
+          value="Clear"
+        />
+      </div>
+    </form>
+    <div id="wrapper" class="wrapper"></div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
